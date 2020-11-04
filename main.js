@@ -8,7 +8,7 @@ const handlebars = require('express-handlebars');
 const mysql = require('mysql2/promise');
 
 // Environment configuration
-const PORT = parseInt(process.argv[2] || process.env.PORT) || 3000;
+const PORT = process.env.PORT;
 
 // Connection pool config
 const pool = mysql.createPool({
