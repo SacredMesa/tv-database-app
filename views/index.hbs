@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <td>Name</td>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each shows}}
+      <tr>
+        <td><a href="tvshow/{{this.tvid}}">{{this.name}}</a></td>
+      </tr>
+    {{/each}}
+
+  </tbody>
+</table>
